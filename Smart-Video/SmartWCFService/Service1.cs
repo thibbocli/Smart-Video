@@ -4,28 +4,23 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using DTO;
+using BLL;
 
 namespace SmartWCFService
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
     public class Service1 : IService1
     {
-        public string GetData(int value)
+        private BllItem BLLobj=new BllItem();
+        public List<FilmCompletDTO> GetPaginatedFilm(int page)
         {
-            return string.Format("You entered: {0}", value);
+            return BLLobj.SelectPaginatesFilm(page);
         }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public FilmCompletDTO GetFilm(int id)
         {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
+            return BLLobj.SelectFilmComplet(id);
         }
     }
 }

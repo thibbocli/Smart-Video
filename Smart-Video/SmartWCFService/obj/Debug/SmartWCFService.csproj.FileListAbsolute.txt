@@ -1,0 +1,12 @@
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartWCFService\bin\Debug\SmartWCFService.dll.config
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartWCFService\bin\Debug\SmartWCFService.dll
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartWCFService\bin\Debug\SmartWCFService.pdb
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartWCFService\bin\Debug\BLL.dll
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartWCFService\bin\Debug\DTO.dll
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartWCFService\bin\Debug\DAL.dll
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartWCFService\bin\Debug\BLL.pdb
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartWCFService\bin\Debug\DTO.pdb
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartWCFService\bin\Debug\DAL.pdb
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartWCFService\obj\Debug\SmartWCFService.csprojResolveAssemblyReference.cache
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartWCFService\obj\Debug\SmartWCFService.dll
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartWCFService\obj\Debug\SmartWCFService.pdb
