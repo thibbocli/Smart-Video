@@ -16,10 +16,10 @@ namespace SmartVideo.ServiceReference1 {
     public interface IService1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetPaginatedFilm", ReplyAction="http://tempuri.org/IService1/GetPaginatedFilmResponse")]
-        DTO.FilmCompletDTO[] GetPaginatedFilm(int page);
+        DTO.FilmDTO[] GetPaginatedFilm(int page);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetPaginatedFilm", ReplyAction="http://tempuri.org/IService1/GetPaginatedFilmResponse")]
-        System.Threading.Tasks.Task<DTO.FilmCompletDTO[]> GetPaginatedFilmAsync(int page);
+        System.Threading.Tasks.Task<DTO.FilmDTO[]> GetPaginatedFilmAsync(int page);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetFilm", ReplyAction="http://tempuri.org/IService1/GetFilmResponse")]
         DTO.FilmCompletDTO GetFilm(int id);
@@ -55,11 +55,11 @@ namespace SmartVideo.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public DTO.FilmCompletDTO[] GetPaginatedFilm(int page) {
+        public DTO.FilmDTO[] GetPaginatedFilm(int page) {
             return base.Channel.GetPaginatedFilm(page);
         }
         
-        public System.Threading.Tasks.Task<DTO.FilmCompletDTO[]> GetPaginatedFilmAsync(int page) {
+        public System.Threading.Tasks.Task<DTO.FilmDTO[]> GetPaginatedFilmAsync(int page) {
             return base.Channel.GetPaginatedFilmAsync(page);
         }
         

@@ -13,7 +13,7 @@ namespace SmartWCFService
     public interface IService1
     {
         [OperationContract]
-        List<FilmCompletDTO> GetPaginatedFilm(int page=0);
+        List<FilmDTO> GetPaginatedFilm(int page=0);
 
         [OperationContract]
         FilmCompletDTO GetFilm(int id);    

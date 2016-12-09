@@ -13,10 +13,10 @@ namespace SmartVideo
 {
     public class MainWindowViewModel:INotifyPropertyChanged
     {
-        private List<FilmCompletDTO> _listFilm;
+        private List<FilmDTO> _listFilm;
         private int page = -1;
 
-        public List<FilmCompletDTO> ListFilm
+        public List<FilmDTO> ListFilm
         {
             get { return _listFilm; }
             set { if(value==_listFilm)
@@ -34,8 +34,7 @@ namespace SmartVideo
         {
             ListFilmCommandNext = new RelayCommand(C => {
                 page++;
-                FilmCompletDTO[] test = new FilmCompletDTO[20]; test = Client.GetPaginatedFilm(page);
-                ListFilm = test.ToList();
+                ListFilm = Client.GetPaginatedFilm(page).ToList();
             });
             ListFilmCommandPrevious = new RelayCommand(C =>
             {
@@ -43,8 +42,7 @@ namespace SmartVideo
                     page = 0;
                 if (page != 0)
                     page--;
-                FilmCompletDTO[] test = new FilmCompletDTO[20]; test = Client.GetPaginatedFilm(page);
-                ListFilm = test.ToList();
+                ListFilm = Client.GetPaginatedFilm(page).ToList();
             });
             _listFilm = null;
         }

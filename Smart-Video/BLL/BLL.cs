@@ -40,9 +40,9 @@ namespace BLL
                 }).ToList();
         }
 
-        public List<FilmCompletDTO> SelectPaginatesFilm(int page = 0)
+        public List<FilmDTO> SelectPaginatesFilm(int page = 0)
         {
-            return SelectAllFilm().Skip(page*20).Take(20).ToList();
+            return _dalInstance.SelectAllFilmObject().Skip(page*20).Take(20).ToList();
         }
 
         public FilmCompletDTO SelectFilmComplet(int id)
