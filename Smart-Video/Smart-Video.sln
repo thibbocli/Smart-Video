@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartWCFService", "SmartWCF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALLocal", "DALLocal\DALLocal.csproj", "{74CF80EE-902E-4DA8-8EA9-7AE917ABE03B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLLLocal", "BLLLocal\BLLLocal.csproj", "{5B2A2D10-B689-4B96-B568-1385C241D2C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{74CF80EE-902E-4DA8-8EA9-7AE917ABE03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74CF80EE-902E-4DA8-8EA9-7AE917ABE03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74CF80EE-902E-4DA8-8EA9-7AE917ABE03B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B2A2D10-B689-4B96-B568-1385C241D2C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B2A2D10-B689-4B96-B568-1385C241D2C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B2A2D10-B689-4B96-B568-1385C241D2C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B2A2D10-B689-4B96-B568-1385C241D2C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
