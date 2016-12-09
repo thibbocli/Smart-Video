@@ -13,7 +13,7 @@ namespace SmartWCFService
     public class Service1 : IService1
     {
         private BllItem BLLobj=new BllItem();
-        public List<FilmCompletDTO> GetPaginatedFilm(int page)
+        public List<FilmCompletDTO> GetPaginatedFilm(int page=0)
         {
             return BLLobj.SelectPaginatesFilm(page);
         }

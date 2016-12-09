@@ -1,0 +1,16 @@
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\bin\Debug\SmartVideo.exe.config
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\bin\Debug\SmartVideo.exe
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\bin\Debug\SmartVideo.pdb
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\bin\Debug\DTO.dll
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\bin\Debug\DTO.pdb
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\SmartVideo.csprojResolveAssemblyReference.cache
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\MainWindow.g.cs
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\App.g.cs
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\SmartVideo_MarkupCompile.cache
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\SmartVideo_MarkupCompile.lref
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\MainWindow.baml
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\SmartVideo.g.resources
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\SmartVideo.Properties.Resources.resources
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\SmartVideo.csproj.GenerateResource.Cache
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\SmartVideo.exe
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\SmartVideo.pdb
