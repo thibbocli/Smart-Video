@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmartVideo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="391.004" Width="649.477">
+    <StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="74" Margin="6,9,0,0" VerticalAlignment="Top" Width="629" Orientation="Horizontal">
+            <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="10,0,5,0" Width="119"/>
+            <Button x:Name="button1" Content="Button" Height="74" Margin="5,0,5,0" VerticalAlignment="Top" Width="132"/>
+            
+        </StackPanel>
+        <Grid Height="277">
+            <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="267" VerticalAlignment="Top" Width="281"/>
+
+        </Grid>
+    </StackPanel>
+
 </Window>
