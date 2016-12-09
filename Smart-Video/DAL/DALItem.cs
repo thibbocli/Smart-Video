@@ -8,12 +8,13 @@ using DTO;
 
 namespace DAL
 {
-    public class DAL
+    public class DalItem
     {
-        public static DAL ContextDal=new DAL();
+        public static DalItem Instance { get; } = new DalItem();
+
         private readonly FilmBDDataContext _dbDataContext;
 
-        private DAL()
+        private DalItem()
         {
             _dbDataContext = new FilmBDDataContext();
         }
@@ -21,7 +22,7 @@ namespace DAL
         public List<FilmDTO> SelectAllFilmObject()
         {
             return (from p in _dbDataContext.Films
-                select new FilmDTO() {Id = p.id, PosterPath = p.posterpath, Runtime = p.runtime??0, Title = p.title}).ToList();
+                select new FilmDTO() {Id = p.id, PosterPath = p.posterpath, Runtime = p.runtime??0, Title = p.title,OriginalTitle = p.original_title}).ToList();
         }
 
         public List<FilmActeurDTO> SelectAllFilmActors()
