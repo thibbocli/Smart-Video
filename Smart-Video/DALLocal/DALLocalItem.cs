@@ -9,15 +9,17 @@ namespace DALLocal
 {
     public class DalLocalItem
     {
-        public static DalLocalItem Instance { get; }=new DalLocalItem();
+        public static DalLocalItem Instance { get; } = new DalLocalItem();
         private readonly FilmBDLocalDataContext _bdLocalData;
 
         private DalLocalItem()
         {
             //todo change hardcoded connection string
-            _bdLocalData=new FilmBDLocalDataContext("Data Source=(localdb)\\ProjectsV12;Initial Catalog=FilmDBLocal;Integrated Security=True" +
-            ";Connect Timeout=30;Encrypt=False;TrustServerCertificate=True");
-            if(!_bdLocalData.DatabaseExists())
+            _bdLocalData =
+                new FilmBDLocalDataContext(
+                    "Data Source=(localdb)\\ProjectsV12;Initial Catalog=FilmDBLocal1;Integrated Security=True" +
+                    ";Connect Timeout=30;Encrypt=False;TrustServerCertificate=True");
+            if (!_bdLocalData.DatabaseExists())
                 _bdLocalData.CreateDatabase();
         }
 
@@ -31,7 +33,7 @@ namespace DALLocal
                     Title = f.title,
                     OriginalTitle = f.original_title,
                     PosterPath = f.posterpath,
-                    Runtime = f.runtime??0
+                    Runtime = f.runtime ?? 0
                 }).ToList();
         }
 
@@ -66,7 +68,8 @@ namespace DALLocal
 
         public void InsertListFilmGenres(List<FilmGenreDTO> lfg)
         {
-            _bdLocalData.FilmGenres.InsertAllOnSubmit(from fg in lfg select new FilmGenre() {id_film = fg.IdFilm,id_genre = fg.IdGenre});
+            _bdLocalData.FilmGenres.InsertAllOnSubmit(from fg in lfg
+                select new FilmGenre() {id_film = fg.IdFilm, id_genre = fg.IdGenre});
         }
 
         public List<GenreDTO> SelectAlGenres()
@@ -81,8 +84,9 @@ namespace DALLocal
 
         public void InsertListGenre(List<GenreDTO> lg)
         {
-            _bdLocalData.Genres.InsertAllOnSubmit(from g in lg select new Genre() {id = g.Id,name = g.Name});
+            _bdLocalData.Genres.InsertAllOnSubmit(from g in lg select new Genre() {id = g.Id, name = g.Name});
         }
+
         public List<FilmActeurDTO> SelectAllFilmActeurs()
         {
             return
@@ -102,7 +106,8 @@ namespace DALLocal
 
         public void InsertListFilmActeur(List<FilmActeurDTO> lfa)
         {
-            _bdLocalData.FilmActors.InsertAllOnSubmit(from fa in lfa select new FilmActor() {id_actor = fa.IdActor,id_film = fa.IdFilm});
+            _bdLocalData.FilmActors.InsertAllOnSubmit(from fa in lfa
+                select new FilmActor() {id_actor = fa.IdActor, id_film = fa.IdFilm});
         }
 
         public List<ActorDTO> SelectAllActors()
@@ -121,6 +126,11 @@ namespace DALLocal
         {
             _bdLocalData.Actors.InsertAllOnSubmit(from a in la
                 select new Actor() {id = a.Id, character = a.Character, name = a.Name});
+        }
+
+        public void Submit()
+        {
+                _bdLocalData.SubmitChanges();         
         }
     }
 }

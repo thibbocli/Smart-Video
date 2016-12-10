@@ -118,6 +118,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BLLLocal\BLLLocal.csproj">
+      <Project>{5b2a2d10-b689-4b96-b568-1385c241d2c1}</Project>
+      <Name>BLLLocal</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{952d7958-17e0-470c-8bec-9891411f4def}</Project>
       <Name>DTO</Name>

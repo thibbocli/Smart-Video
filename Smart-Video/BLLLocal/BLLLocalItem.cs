@@ -57,6 +57,7 @@ namespace BLLLocal
             Instance.InsertListFilmActeur((from a in fc.ActorList select new FilmActeurDTO() {IdFilm = fc.Id,IdActor = a.Id}).ToList());
             Instance.InsertListGenre(fc.GenreList);
             Instance.InsertListFilmGenres((from g in fc.GenreList select new FilmGenreDTO() {IdFilm = fc.Id,IdGenre = g.Id}).ToList());
+            Instance.Submit();
         }
     }
 }

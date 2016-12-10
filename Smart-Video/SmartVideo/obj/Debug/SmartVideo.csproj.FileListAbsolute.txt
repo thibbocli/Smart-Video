@@ -14,3 +14,7 @@ C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\Sma
 C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\SmartVideo.csproj.GenerateResource.Cache
 C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\SmartVideo.exe
 C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\obj\Debug\SmartVideo.pdb
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\bin\Debug\BLLLocal.dll
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\bin\Debug\DALLocal.dll
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\bin\Debug\BLLLocal.pdb
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\SmartVideo\bin\Debug\DALLocal.pdb

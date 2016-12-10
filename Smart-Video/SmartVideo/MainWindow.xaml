@@ -5,15 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmartVideo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="391.004" Width="649.477">
+        Title="MainWindow" Height="525.004" Width="649.477">
     <StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="74" Margin="6,9,0,0" VerticalAlignment="Top" Width="629" Orientation="Horizontal">
-            <Button Content="Next" HorizontalAlignment="Left" Margin="10,0,5,0" Width="119" Command="{Binding ListFilmCommandNext}"/>
-            <Button Content="Previous" Height="74" Margin="5,0,5,0" VerticalAlignment="Top" Width="132" Command="{Binding ListFilmCommandPrevious}"/>
+        <StackPanel HorizontalAlignment="Left" Height="179" Margin="6,9,0,0" VerticalAlignment="Top" Width="629" Orientation="Horizontal">
+            <Button Content="Next" HorizontalAlignment="Left" Margin="10,152,5,0" Width="119" Command="{Binding ListFilmCommandNext}"/>
+            <Button Content="Previous" Height="27" Margin="5,152,5,0" VerticalAlignment="Top" Width="132" Command="{Binding ListFilmCommandPrevious}"/>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Alim Local" Height="74" Margin="5,0,5,0" VerticalAlignment="Top" Width="132" Command="{Binding AlimLocal}"/>
+                    <Label  Content="Id Film:" Margin="0,0,0,48"/>
+                    <TextBox  TextWrapping="Wrap" Text="{Binding IdFilm}" Width="120" Margin="0,0,0,48"/>
+                </StackPanel>
+                <StackPanel Height="96" Orientation="Horizontal">
+                    <Button Content="Next" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5,5,5,5" Width="119" Command="{Binding ListFilmCommandNextLocal}" Height="27"/>
+                    <Button Content="Previous" Height="27" VerticalAlignment="Bottom" Width="132" Command="{Binding ListFilmCommandPreviousLocal}" Margin="5,5,5,5"/>
+                </StackPanel>
+            </StackPanel>
         </StackPanel>
-        <Grid Height="277">
-            <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="267" VerticalAlignment="Top" Width="347" ItemsSource="{Binding ListFilm}"/>
-        </Grid>
+        <StackPanel Orientation="Horizontal">
+            <DataGrid HorizontalAlignment="Left" Height="267" VerticalAlignment="Top" Width="301" ItemsSource="{Binding ListFilm}"/>
+            <DataGrid  HorizontalAlignment="Right" Height="267" VerticalAlignment="Top" Width="335" ItemsSource="{Binding ListFilmLocal}"/>
+        </StackPanel>
     </StackPanel>
 
 </Window>

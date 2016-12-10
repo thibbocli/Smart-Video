@@ -60,5 +60,10 @@ namespace DAL
             return
                 (from p in _dbDataContext.Realisateurs select new RealisateurDTO() {Id = p.id, Name = p.name}).ToList();
         }
+
+        public void Submit()
+        {
+            _dbDataContext.SubmitChanges();
+        }
     }
 }
