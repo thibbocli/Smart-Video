@@ -1,4 +1,0 @@
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\DTO\bin\Debug\DTO.dll
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\DTO\bin\Debug\DTO.pdb
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\DTO\obj\Debug\DTO.dll
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\DTO\obj\Debug\DTO.pdb

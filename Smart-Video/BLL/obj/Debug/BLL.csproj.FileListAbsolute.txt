@@ -1,9 +1,0 @@
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\BLL\bin\Debug\BLL.dll
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\BLL\bin\Debug\BLL.pdb
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\BLL\obj\Debug\BLL.dll
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\BLL\obj\Debug\BLL.pdb
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\BLL\bin\Debug\DAL.dll
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\BLL\bin\Debug\DTO.dll
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\BLL\bin\Debug\DAL.pdb
-C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\BLL\bin\Debug\DTO.pdb

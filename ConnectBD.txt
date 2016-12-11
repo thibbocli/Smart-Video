@@ -1,3 +1,0 @@
-smart-video.database.windows.net
-username : juif
-pwd : Azerty12
