@@ -32,7 +32,7 @@
         <elementListCompartment Id="bfcc5046-a405-4be3-8c1c-c0f555cee21a" absoluteBounds="3.6399999999999997, 3.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.875 : 1.47199625651042); (5.5 : 1.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.875 : 1.47199625651042); (5.5 : 1.47199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/FilmBDLocalDataContext/Genre/Genre_FilmGenre" />
       <nodes>
         <classShapeMoniker Id="ed1cc871-f3d9-4f53-8039-dc01934b4f54" />

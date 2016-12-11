@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Linq;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ namespace DALLocal
     public class DalLocalItem
     {
         public static DalLocalItem Instance { get; } = new DalLocalItem();
-        private readonly FilmBDLocalDataContext _bdLocalData;
+        private FilmBDLocalDataContext _bdLocalData;
 
         private DalLocalItem()
         {
@@ -126,7 +127,15 @@ namespace DALLocal
 
         public void Submit()
         {
-                _bdLocalData.SubmitChanges();         
+            try
+            {
+                _bdLocalData.SubmitChanges(ConflictMode.ContinueOnConflict);
+            }
+            catch (Exception)
+            {
+                _bdLocalData = new FilmBDLocalDataContext(DatabaseSetting.Default.ConnectionString);
+                throw;
+            }
         }
     }
 }
