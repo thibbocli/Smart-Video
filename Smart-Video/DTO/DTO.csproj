@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActorDTO.cs" />
+    <Compile Include="ComparatorActorDTO.cs" />
+    <Compile Include="ComparatorGenreDto.cs" />
     <Compile Include="FilmActeurDTO.cs" />
     <Compile Include="FilmCompletDTO.cs" />
     <Compile Include="FilmDTO.cs" />

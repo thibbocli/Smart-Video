@@ -53,10 +53,12 @@ namespace BLLLocal
                 Runtime = fc.Runtime,
                 OriginalTitle = fc.OriginalTitle
             });
-            Instance.InsertListActor(fc.ActorList);
-            Instance.InsertListFilmActeur((from a in fc.ActorList select new FilmActeurDTO() {IdFilm = fc.Id,IdActor = a.Id}).ToList());
-            Instance.InsertListGenre(fc.GenreList);
-            Instance.InsertListFilmGenres((from g in fc.GenreList select new FilmGenreDTO() {IdFilm = fc.Id,IdGenre = g.Id}).ToList());
+            Instance.InsertListActor(fc.ActorList.Except(Instance.SelectAllActors(),new ComparatorActorDto()).ToList());
+            Instance.InsertListFilmActeur(
+                (from a in fc.ActorList select new FilmActeurDTO() {IdFilm = fc.Id, IdActor = a.Id}).ToList());
+            Instance.InsertListGenre(fc.GenreList.Except(Instance.SelectAlGenres(),new ComparatorGenreDto()).ToList());
+            Instance.InsertListFilmGenres(
+                (from g in fc.GenreList select new FilmGenreDTO() {IdFilm = fc.Id, IdGenre = g.Id}).ToList());
             Instance.Submit();
         }
     }

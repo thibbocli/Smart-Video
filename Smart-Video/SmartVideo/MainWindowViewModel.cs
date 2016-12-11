@@ -75,7 +75,7 @@ namespace SmartVideo
                 }
                 catch (Exception exception)
                 {
-                    MessageBox.Show(exception.Message, "error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show(exception.Message+"\n"+exception.StackTrace, "error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             });
             ListFilmCommandNextLocal=new RelayCommand(c =>
