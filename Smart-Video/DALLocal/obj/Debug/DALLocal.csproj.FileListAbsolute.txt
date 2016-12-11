@@ -5,3 +5,4 @@ C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\DALLocal\bin\Debug\DTO.p
 C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\DALLocal\obj\Debug\DALLocal.csprojResolveAssemblyReference.cache
 C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\DALLocal\obj\Debug\DALLocal.dll
 C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\DALLocal\obj\Debug\DALLocal.pdb
+C:\Users\loics_000\Source\Repos\Smart-Video\Smart-Video\DALLocal\bin\Debug\DALLocal.dll.config

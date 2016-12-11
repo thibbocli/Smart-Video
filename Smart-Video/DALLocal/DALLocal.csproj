@@ -42,6 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DALLocalItem.cs" />
+    <Compile Include="DatabaseSetting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>DatabaseSetting.settings</DependentUpon>
+    </Compile>
     <Compile Include="FilmBDLocal.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -56,6 +61,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DatabaseSetting.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>DatabaseSetting.Designer.cs</LastGenOutput>
+    </None>
     <None Include="FilmBDLocal.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>FilmBDLocal.designer.cs</LastGenOutput>

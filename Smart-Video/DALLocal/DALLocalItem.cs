@@ -14,11 +14,7 @@ namespace DALLocal
 
         private DalLocalItem()
         {
-            //todo change hardcoded connection string
-            _bdLocalData =
-                new FilmBDLocalDataContext(
-                    "Data Source=(localdb)\\ProjectsV12;Initial Catalog=FilmDBLocal1;Integrated Security=True" +
-                    ";Connect Timeout=30;Encrypt=False;TrustServerCertificate=True");
+            _bdLocalData = new FilmBDLocalDataContext(DatabaseSetting.Default.ConnectionString);
             if (!_bdLocalData.DatabaseExists())
                 _bdLocalData.CreateDatabase();
         }
